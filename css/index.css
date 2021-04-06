@@ -48,7 +48,7 @@
 .mobile-img{
 
     height: 500px;
-    width: auto;
+    width: 100%;
 }
 
 .laptop-img{
@@ -100,7 +100,7 @@ align-items: center;
 
 .gym-picture-1{
     height: auto;
-    width: 21rem;
+    width: 100%;
 }
 
 .join-button-div{
@@ -111,6 +111,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
 
 }
 .join-button{
