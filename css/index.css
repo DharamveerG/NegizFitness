@@ -1,0 +1,464 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+/* for cut padding and margin */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar h2{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+
+.Logo-picture{
+    position: relative;
+   top: 70px;
+    height: 32rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.mobile-img{
+
+    height: 500px;
+    width: auto;
+}
+
+.laptop-img{
+    display: none;
+}
+
+.Logo-picture h2{
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%,-42%);
+    color: white;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.Logo-picture h4{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.gym-picture-div{
+    position: relative;
+    top: 70px;
+height: 28rem;
+width: 100%;
+ 
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.gym-picture{
+  margin-bottom: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.gym-picture-1{
+    height: auto;
+    width: 21rem;
+}
+
+.join-button-div{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.join-button{
+    margin: 20px;
+    padding:10px;
+    width: 100%;
+    height: 4;
+  background-color: #b4a5a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.JOIN-today-text{
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-decoration: none;
+}
+.JOIN-today-text:hover{
+   color: gray;
+}
+
+/* blue box */
+
+.blue-box{
+    width: 21rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.blue-box-items{
+    
+    width: 21rem;
+    height: 20rem;
+    background-color: #0071cf;
+   
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+    
+}
+
+.blue-box-items h2{
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 40px;
+   
+}
+.blue-box-items h5{
+    color: white;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+   
+    font-size: 25px;
+}
+
+/* blue box end */
+
+.blue-box-items .learn-more{
+    color: white;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+   
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.virtual-box-div{
+    position: relative;
+    top:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ flex-direction: column;
+    height: 35rem;
+    width: 100%;
+}
+.Vertual-training-text{
+    font-size: 20px;
+    color: white;
+    line-height: normal;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+    padding: 10px;
+    margin: 20px;
+   letter-spacing: 5px;
+   text-align: center;
+
+}
+
+.meet-icons{
+   margin-top:10px ;
+    flex-direction: row;
+    
+}
+
+
+.bg-img-meet{
+    width: 21rem;
+    height: auto;
+}
+
+.bg-img-meet-1{
+    display: none;
+}
+
+.home-traning-div{
+    position: relative;
+    top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55rem;
+    flex-direction: column;
+}
+.home-training{
+    
+    font-size: 25px ;
+    color: white;
+    
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+    padding: 10px;
+    margin: 20px;
+   letter-spacing: 5px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.contact-us{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    word-spacing: 2px;
+}
+
+.home-traning-img{
+   margin-top: 10px;
+    width: 100%;
+    height: 32rem;
+}
+
+.home-img-1{
+    padding: 0px 20px 0px 20px;
+    height: auto;
+    width: 100%;
+}
+.home-img-2{
+display: none;
+}
+.online-sessions-div{
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 42rem;
+}
+.youtube-videos{
+   
+    height: 21rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube-videos .iframeheight{
+   
+    height:auto;
+    width: 90%;
+}
+
+.iframeheight:nth-of-type(1){
+    margin-bottom: 20px;
+}
+
+.footer{
+    position: relative;
+    top: 70px;
+    display: flex;
+    width: 100%;
+    height: 40rem;
+   
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div{
+    display: flex;
+    background-color: #212121;
+width: 90%;
+height: 39rem;
+justify-content: flex-start;
+align-items: flex-start;
+padding: 30px;
+letter-spacing: 3px;
+flex-direction: column;
+}
+
+.footer-div h1{
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+color: white;
+font-size: 30px;
+font-family: 'Teko', sans-serif;
+letter-spacing: 8px;
+
+
+}
+
+.second-heading-footer{
+    margin: 30px 0px 10px 0px;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 22px;
+    font-family: 'Teko', sans-serif;
+}
+
+.second-footer-content{
+    margin: 0px 0px 0px 0px;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Teko', sans-serif;
+}
+
+
+/* desktop site */
+
+@media only screen   
+and (min-width: 1000px)  
+and (max-width: 2000px)  {
+
+    .Logo-picture{
+     
+        height: 45rem;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .mobile-img{
+        display: none;
+    }
+.laptop-img{
+    display: block;
+    height: 45rem;
+    width: auto;
+}
+.gym-picture-div{
+  
+    height: 18rem;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+    overflow: hidden;
+    margin: 5px;
+    padding: 20px;
+   
+}
+.gym-picture{
+    margin: 10px;
+    width: 48rem;
+    height: 17rem;
+}
+.gym-picture-1{
+height: 17rem;
+width: 100%;
+}
+
+
+.blue-box{
+    height: 17rem;
+    width: 21rem;
+}
+.blue-box-items{
+    width: 100%;
+    height: 17rem;
+}
+
+.virtual-box-div{
+    flex-direction: row-reverse;
+    height: 18rem;
+}
+
+.bg-img-meet{
+    display: none;
+}
+
+.bg-img-meet-1{
+    margin-right: 35px;
+    display: block;
+    height: 16rem;
+    width: 45rem;
+}
+
+.home-traning-div{
+height: 20rem;
+flex-direction: row;
+}
+.home-traning-img{
+    height: 17.5rem;
+    width: 67%;
+}
+.home-img-1{
+display: none;
+}
+.home-img-2{
+    display: block;
+    height: 17rem;
+    width: auto;
+    margin-left: 25px;
+    background-size: contain;
+}
+
+.online-sessions-div{
+   flex-direction: row-reverse;
+   height: 20rem;
+   padding: 10px;
+}
+.youtube-videos{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.youtube-videos .iframeheight{
+    width: 25rem;
+    height: 17rem;
+    margin: 10px;
+}
+
+
+}
