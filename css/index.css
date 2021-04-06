@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+.padding{
+    padding: 20px;
+}
+
 .navbar{
     position: fixed;
     top: 0;
@@ -110,7 +114,8 @@ align-items: center;
 
 }
 .join-button{
-    margin: 20px;
+    position: absolute;
+   margin: 7px;
     padding:10px;
     width: 100%;
     height: 4;
@@ -138,7 +143,7 @@ align-items: center;
 /* blue box */
 
 .blue-box{
-    width: 21rem;
+    width: 100%;
     height: 20rem;
     display: flex;
     align-items: center;
@@ -147,7 +152,7 @@ align-items: center;
 }
 .blue-box-items{
     
-    width: 21rem;
+    width: 100%;
     height: 20rem;
     background-color: #0071cf;
    
@@ -192,7 +197,7 @@ align-items: center;
 
 .virtual-box-div{
     position: relative;
-    top:70px;
+    top:80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,7 +226,7 @@ align-items: center;
 
 
 .bg-img-meet{
-    width: 21rem;
+    width: 100%;
     height: auto;
 }
 
@@ -235,8 +240,9 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55rem;
+    height: 50rem;
     flex-direction: column;
+    width: 100%;
 }
 .home-training{
     
@@ -282,6 +288,7 @@ display: none;
     justify-content: center;
     align-items: center;
     height: 42rem;
+    width: 100%;
 }
 .youtube-videos{
    
@@ -318,7 +325,7 @@ display: none;
 .footer-div{
     display: flex;
     background-color: #212121;
-width: 90%;
+width: 100%;
 height: 39rem;
 justify-content: flex-start;
 align-items: flex-start;
