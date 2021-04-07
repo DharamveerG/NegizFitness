@@ -1,472 +1,532 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
 
 /* for cut padding and margin */
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.padding{
-    padding: 20px;
+.padding {
+  padding: 0px 20px 20px 20px;
 }
 
-.navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 70px;
-    background-color:white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-.navbar h2{
-    font-size: 35px;
-    color: black;
-    text-align: center;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-    letter-spacing: 2px;
+.navbar h2 {
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 2px;
 }
 
-
-.Logo-picture{
-    position: relative;
-   top: 70px;
-    height: 32rem;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.mobile-img{
-
-    height: 500px;
-    width: 100%;
-}
-
-.laptop-img{
-    display: none;
-}
-
-.Logo-picture h2{
-    position: absolute;
-    left: 50%;
-    top: 42%;
-    transform: translate(-50%,-42%);
-    color: white;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-    font-size: 35px;
-}
-
-.Logo-picture h4{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-    font-size: 25px;
-}
-
-.gym-picture-div{
-    position: relative;
-    top: 70px;
-height: 28rem;
-width: 100%;
- 
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}
-
-.gym-picture{
+.Logo-picture {
+  position: relative;
+  top: 60px;
   margin-bottom: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.gym-picture-1{
+.mobile-img {
+ 
+  min-height: 100%;
     height: auto;
-    width: 100%;
+    max-width: 100%;
 }
 
-.join-button-div{
-    position: relative;
-    top: 70px;
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-
+.laptop-img {
+  display: none;
 }
-.join-button{
-    position: absolute;
-   margin: 7px;
-    padding:10px;
-    width: 100%;
-    height: 4;
+
+.Logo-picture h2 {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -15%);
+  color: white;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.Logo-picture h3{
+  position: absolute;
+  left: 50%;
+  top: 82%;
+
+  transform: translate(-50%, -82%);
+  color: white;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 6px;
+  font-size: 26px;
+}
+.Logo-picture h4 {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  white-space: nowrap;
+  transform: translate(-50%, -90%);
+  color: white;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.gym-picture-div {
+  position: relative;
+  top: 60px;
+ min-height: 20rem;
+ height: auto;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gym-picture {
+  display: none;
+  margin-bottom: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.gym-picture-1 {
+  height: auto;
+  width: 100%;
+}
+
+.join-button-div {
+  position: relative;
+  top: 60px;
+  width: 100%;
+  border-radius: 2px;
+  min-height: 5rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.join-button {
+  position: absolute;
+  margin: 7px;
+  padding: 10px;
+  width: 100%;
+  height: 4;
   background-color: #b4a5a5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  justify-content: center;
 }
 
-
-.JOIN-today-text{
-    text-align: center;
-    line-height: 40px;
-    color: white;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-    font-size: 40px;
-    text-decoration: none;
+.JOIN-today-text {
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 40px;
+  text-decoration: none;
 }
-.JOIN-today-text:hover{
-   color: gray;
+.JOIN-today-text:hover {
+  color: gray;
 }
 
 /* blue box */
 
-.blue-box{
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.blue-box {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.blue-box-items{
-    
-    width: 100%;
-    height: 20rem;
-    background-color: #0071cf;
-   
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    flex-direction: column;
-    
+.blue-box-items {
+  width: 100%;
+  height: 20rem;
+  background-color: #0071cf;
+border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
 }
 
-.blue-box-items h2{
-    text-align: center;
-    line-height: 40px;
-    color: white;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-    letter-spacing: 2px;
-    font-size: 40px;
-   
+.blue-box-items h2 {
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-size: 40px;
 }
-.blue-box-items h5{
-    color: white;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-   
-    font-size: 25px;
+.blue-box-items h5 {
+  color: white;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+
+  font-size: 25px;
 }
 
 /* blue box end */
 
-.blue-box-items .learn-more{
-    color: white;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-   
-    font-size: 16px;
-    text-transform: capitalize;
-    text-decoration: underline;
+.blue-box-items .learn-more {
+  color: white;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: underline;
 }
 
-.virtual-box-div{
-    position: relative;
-    top:80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- flex-direction: column;
-    height: 35rem;
-    width: 100%;
+.virtual-box-div {
+  position: relative;
+  top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 35rem;
+  height: auto;
+  width: 100%;
 }
-.Vertual-training-text{
-    font-size: 20px;
-    color: white;
-    line-height: normal;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-    padding: 10px;
-    margin: 20px;
-   letter-spacing: 5px;
-   text-align: center;
-
-}
-
-.meet-icons{
-   margin-top:10px ;
-    flex-direction: row;
-    
+.Vertual-training-text {
+  font-size: 20px;
+  color: white;
+  line-height: normal;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+  padding: 10px;
+  margin: 20px;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
-
-.bg-img-meet{
-    width: 100%;
-    height: auto;
+.meet-icons {
+  margin-top: 10px;
+  flex-direction: row;
 }
 
-.bg-img-meet-1{
-    display: none;
+.bg-img-meet {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
 }
 
-.home-traning-div{
-    position: relative;
-    top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50rem;
-    flex-direction: column;
-    width: 100%;
-}
-.home-training{
-    
-    font-size: 25px ;
-    color: white;
-    
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
-    padding: 10px;
-    margin: 20px;
-   letter-spacing: 5px;
-   text-align: center;
-   text-transform: uppercase;
+.bg-img-meet-1 {
+  display: none;
 }
 
-.contact-us{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    font-family: 'Teko', sans-serif;
-    word-spacing: 2px;
+.home-traning-div {
+  position: relative;
+  top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50rem;
+  height: auto;
+  flex-direction: column;
+  width: 100%;
+}
+.home-training {
+  font-size: 25px;
+  color: white;
+
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
+  padding: 10px;
+  margin: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.home-traning-img{
-   margin-top: 10px;
-    width: 100%;
-    height: 32rem;
+.contact-us {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  word-spacing: 2px;
 }
 
-.home-img-1{
-    padding: 0px 20px 0px 20px;
-    height: auto;
-    width: 100%;
-}
-.home-img-2{
-display: none;
-}
-.online-sessions-div{
-    position: relative;
-    top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 42rem;
-    width: 100%;
-}
-.youtube-videos{
-   
-    height: 21rem;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.home-traning-img {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 15rem;
+  height: auto;
 }
 
-.youtube-videos .iframeheight{
-   
-    height:auto;
-    width: 90%;
+.home-img-1 {
+  padding: 0px 20px 0px 20px;
+  
+  min-height: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.home-img-2 {
+  display: none;
+}
+.online-sessions-div {
+  position: relative;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 42rem;
+  height: auto;
+  width: 100%;
 }
 
-.iframeheight:nth-of-type(1){
-    margin-bottom: 20px;
+.f-links{
+  text-decoration: none;
+}
+.youtube-videos {
+  height: 21rem;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer{
-    position: relative;
-    top: 70px;
-    display: flex;
-    width: 100%;
-    height: 40rem;
-   
-    justify-content: center;
-    align-items: center;
+.youtube-videos .iframeheight {
+  height: auto;
+  width: 90%;
 }
 
-.footer-div{
-    display: flex;
-    background-color: #212121;
-width: 100%;
-height: 39rem;
-justify-content: flex-start;
-align-items: flex-start;
-padding: 30px;
-letter-spacing: 3px;
-flex-direction: column;
+.iframeheight:nth-of-type(1) {
+  margin-bottom: 20px;
 }
 
-.footer-div h1{
-    padding-top: 20px;
-    width: 100%;
-    text-align: center;
-color: white;
-font-size: 30px;
-font-family: 'Teko', sans-serif;
-letter-spacing: 8px;
+.footer {
+  position: relative;
+  top: 60px;
+  display: flex;
+  width: 100%;
+  height: 40rem;
 
-
+  justify-content: center;
+  align-items: center;
 }
 
-.second-heading-footer{
-    margin: 30px 0px 10px 0px;
-    letter-spacing: 3px;
-    color: white;
-    font-size: 22px;
-    font-family: 'Teko', sans-serif;
+.footer-div {
+  display: flex;
+  background-color: #212121;
+  width: 100%;
+  height: 39rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+  letter-spacing: 3px;
+  flex-direction: column;
 }
 
-.second-footer-content{
-    margin: 0px 0px 0px 0px;
-    letter-spacing: 2px;
-    color: white;
-    font-size: 15px;
-    font-family: 'Teko', sans-serif;
+.footer-div h1 {
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 8px;
 }
 
+.second-heading-footer {
+  margin: 30px 0px 10px 0px;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 22px;
+  font-family: "Teko", sans-serif;
+}
+
+.second-footer-content {
+  margin: 0px 0px 0px 0px;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 15px;
+  font-family: "Teko", sans-serif;
+}
+.contact-number{
+  text-decoration: none;
+  border: solid 2px black;
+  color: black;
+  padding: 5px;
+  background-color: #f7f3e9;
+  border-radius: 10%;
+}
 
 /* desktop site */
 
-@media only screen   
-and (min-width: 1000px)  
-and (max-width: 2000px)  {
-
-    .Logo-picture{
-     
-        height: 45rem;
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    .mobile-img{
-        display: none;
-    }
-.laptop-img{
-    display: block;
-    height: 45rem;
-    width: auto;
-}
-.gym-picture-div{
-  
-    height: 18rem;
+@media only screen and (min-width: 1000px) and (max-width: 2000px) {
+  .Logo-picture {
+    min-height: 30rem;
+    height: auto;
     width: 100%;
-    flex-direction: row-reverse;
-    justify-content:flex-end;
-    overflow: hidden;
-    margin: 5px;
-    padding: 20px;
-   
-}
-.gym-picture{
-    margin: 10px;
-    width: 48rem;
-    height: 17rem;
-}
-.gym-picture-1{
-height: 17rem;
-width: 100%;
-}
-
-
-.blue-box{
-    height: 17rem;
-    width: 21rem;
-}
-.blue-box-items{
-    width: 100%;
-    height: 17rem;
-}
-
-.virtual-box-div{
-    flex-direction: row-reverse;
-    height: 18rem;
-}
-
-.bg-img-meet{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .mobile-img {
     display: none;
-}
+  }
 
-.bg-img-meet-1{
+  .Logo-picture h2 {
+    font-size: 70px;
+    letter-spacing: 6px;
+  }
+  .Logo-picture h4 {
+    font-size: 35px;
+  }
+
+  .laptop-img {
+    display: block;
+
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .gym-picture-div {
+   min-height: 17rem;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  .gym-picture {
+    display: flex;
+    padding-left: 10px;
+    width: 100%;
+    height: 17rem;
+  }
+  .gym-picture-1 {
+    min-height: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .blue-box {
+    max-height: 17rem;
+  
+    max-width: 40%;
+  }
+  .blue-box-items {
+    width: 100%;
+    height: 17rem;
+  }
+
+  .virtual-box-div {
+   
+    flex-direction: row-reverse;
+    min-height: 17rem;
+    overflow: hidden;
+  }
+  .meet-icons {
+    margin-top: unset;
+    width: 60%;
+    margin-right: 20px;
+  }
+
+  .bg-img-meet {
+    display: none;
+  }
+
+  .bg-img-meet-1 {
     margin-right: 35px;
     display: block;
-    height: 16rem;
-    width: 45rem;
-}
+    min-height: 100%;
+    height: auto;
+    max-width: 100%;
+  }
 
-.home-traning-div{
-height: 20rem;
-flex-direction: row;
-}
-.home-traning-img{
-    height: 17.5rem;
-    width: 67%;
-}
-.home-img-1{
-display: none;
-}
-.home-img-2{
-    display: block;
+  .home-traning-div {
+    top: 80px;
+    width: 100%;
+    min-height: 23rem;
+    flex-direction: row;
+  }
+  .home-traning-img {
     height: 17rem;
-    width: auto;
-    margin-left: 25px;
-    background-size: contain;
-}
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-img-1 {
+    display: none;
+  }
+  .home-img-2 {
+    display: block;
+    padding: 5px 5px 5px 30px;
+    min-height: 100%;
+    height: auto;
+    max-width: 100%;
+  }
 
-.online-sessions-div{
-   flex-direction: row-reverse;
-   height: 20rem;
-   padding: 10px;
-}
-.youtube-videos{
+  .online-sessions-div {
+    flex-direction: row-reverse;
+    min-height: 20rem;
+    padding: 10px;
+  }
+  .youtube-videos {
     flex-direction: row;
     justify-content: space-between;
-}
+  }
 
-.youtube-videos .iframeheight{
+  .youtube-videos .iframeheight {
     width: 25rem;
     height: 17rem;
     margin: 10px;
-}
-
-
+  }
+  .footer {
+    height: 50rem;
+  }
+  .footer-div {
+    height: 50rem;
+  }
+  .footer-div h1 {
+    font-size: 60px;
+  }
+  .second-heading-footer {
+    font-size: 40px;
+  }
+  .second-footer-content {
+    font-size: 25px;
+  }
 }
